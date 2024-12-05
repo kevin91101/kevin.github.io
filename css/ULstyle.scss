@@ -1,0 +1,113 @@
+.bg-cover{
+    background-position: center center;
+    background-size: cover;
+}
+
+header{
+    // font-family: "Yuji Boku", serif;
+    // font-weight: 900;
+    // font-style: normal;
+    font-family: "Protest Revolution", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+    font-size: 24px;
+
+    .LogIn{
+        button a{
+            text-decoration: none;
+            color: inherit;
+        }
+    }
+}
+
+main{
+    section.sec02 h5{
+        font-family: "Protest Revolution", sans-serif;
+        font-style: normal;
+        font-size: 24px;
+    }
+
+    section.sec02 p, section.sec02 a{
+    // font-family: "Noto Sans TC", sans-serif;
+    // font-optical-sizing: auto;
+    // font-style: normal;
+    // font-weight: 900;
+    font-family: "Yuji Boku", serif;
+    font-weight: 900;
+    font-style: normal;       
+    }
+
+}
+
+.goTop{
+    position: fixed;
+    right: 24px;
+    bottom: 20px;
+    z-index: 600;
+    transform: translateX(0%);
+    transition: transform 0.2s;
+
+    .goTopBtn{
+        background-color: transparent;
+        border: none;
+        outline: none;
+        cursor: pointer;
+
+        .fa-circle-chevron-up{
+            color: grey;
+
+            ::before{
+                content: "\f35b";
+            }
+        }
+    }
+}
+
+.goTop.hide{
+    transform: translateX(200%);
+}
+
+footer{
+    .ftcontent{
+
+        ul{
+            color: white;
+            list-style-type: none;
+        }
+    }
+
+    .fix_ri{
+        width: 50px;
+        box-sizing: border-box;
+        position: fixed;
+        bottom: 70px;
+        right: 23px;
+        z-index: 999;
+        text-align: center;
+
+        a{
+            display: inline-block;
+            margin-bottom: 10px;
+            color: #444;
+            text-decoration: none;
+            background-color: transparent;
+
+            // i{
+            //     opacity: 1;
+            //     width: 100%;
+            //     color: orangered;
+            // }
+            img{
+                opacity: 1;
+                width: 100%;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 992xp){
+    header div.LogIn{
+        color: navajowhite;
+        margin: 0 16px;
+    }
+}

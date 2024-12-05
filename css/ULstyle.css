@@ -1,0 +1,83 @@
+.bg-cover {
+  background-position: center center;
+  background-size: cover;
+}
+
+header {
+  font-family: "Protest Revolution", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+  font-size: 24px;
+}
+header .LogIn button a {
+  text-decoration: none;
+  color: inherit;
+}
+
+main section.sec02 h5 {
+  font-family: "Protest Revolution", sans-serif;
+  font-style: normal;
+  font-size: 24px;
+}
+main section.sec02 p, main section.sec02 a {
+  font-family: "Yuji Boku", serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.goTop {
+  position: fixed;
+  right: 24px;
+  bottom: 20px;
+  z-index: 600;
+  transform: translateX(0%);
+  transition: transform 0.2s;
+}
+.goTop .goTopBtn {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+.goTop .goTopBtn .fa-circle-chevron-up {
+  color: grey;
+}
+.goTop .goTopBtn .fa-circle-chevron-up ::before {
+  content: "\f35b";
+}
+
+.goTop.hide {
+  transform: translateX(200%);
+}
+
+footer .ftcontent ul {
+  color: white;
+  list-style-type: none;
+}
+footer .fix_ri {
+  width: 50px;
+  box-sizing: border-box;
+  position: fixed;
+  bottom: 70px;
+  right: 23px;
+  z-index: 999;
+  text-align: center;
+}
+footer .fix_ri a {
+  display: inline-block;
+  margin-bottom: 10px;
+  color: #444;
+  text-decoration: none;
+  background-color: transparent;
+}
+footer .fix_ri a img {
+  opacity: 1;
+  width: 100%;
+}
+
+@media screen and (max-width: 992xp) {
+  header div.LogIn {
+    color: navajowhite;
+    margin: 0 16px;
+  }
+}/*# sourceMappingURL=ULstyle.css.map */
